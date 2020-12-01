@@ -1,4 +1,29 @@
-# TodoV2
+### 🔧 Technology Stack
+
+- Angular (routing, services)
+- TypeScript
+
+# To Do App - Angular ✔️
+
+Features:
+- add new task
+- sort tasks
+- getting info about "donators" from Random User API (https://randomuser.me/)
+
+<br />
+<br />
+<br />
+**🔗 LIVE: http://jacekcv.com/projects/hangman/**
+<br />
+**🌐 My website: http://jacekcv.com/**
+<br />
+<br />
+**❗️❤️ THANKS FOR VISITING MY PROFILE ❤️❗️**
+<br />
+<br />
+<br />
+
+# 📄 Documentation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
