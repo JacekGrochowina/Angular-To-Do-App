@@ -1,0 +1,9 @@
+.content-home {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 56px);
+}
+
+.section-list {
+    flex-grow: 1;
+}

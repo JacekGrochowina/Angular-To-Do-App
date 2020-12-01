@@ -1,0 +1,9 @@
+.content-not-found {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 56px);
+}
+
+.section-empty {
+    flex-grow: 1;
+}

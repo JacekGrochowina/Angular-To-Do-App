@@ -1,0 +1,16 @@
+.list-group-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    .long {
+        flex-grow: 1;
+        position: relative;
+        span {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    }
+}

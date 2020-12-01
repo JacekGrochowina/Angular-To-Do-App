@@ -1,0 +1,31 @@
+<ul class="list-group">
+    <!-- <label *ngIf="todoService.anyRemainingModel">Brak wyników...</label> -->
+    <app-todo-item
+        *ngFor="let todo of todoService.todosFiltered()"
+        [todo]="todo"
+    ></app-todo-item>
+</ul>
+
+<label class="mt-5">Zostało zadań: <strong>{{ todoService.remaining() }}</strong></label>
+
+<div class="mt-1 pt-3 border-top">
+
+    <div class="wrapper-group mb-4">
+        <div class="form-check"></div>
+
+        <div class="btn-group mt-3" role="group" aria-label="Basic example">
+            <button [ngClass]="{'active': todoService.filter === 'all'}" (click)="todoService.filter='all'" type="button" class="btn btn-secondary">Wszystkie</button>
+            <button [ngClass]="{'active': todoService.filter === 'active'}" (click)="todoService.filter='active'" type="button" class="btn btn-secondary">Aktywne</button>
+            <button [ngClass]="{'active': todoService.filter === 'completed'}" (click)="todoService.filter='completed'" type="button" class="btn btn-secondary">Ukończone</button>
+        </div>
+    </div>
+
+    <button (click)="todoService.clearCompleted()" *ngIf="todoService.atLeastOneCompleted()" type="button" class="btn btn-danger" style="float: right;">
+        Wyczyść ukończone
+        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-trash ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="transform: translateY(-1px);">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+        </svg>
+    </button>
+
+</div>

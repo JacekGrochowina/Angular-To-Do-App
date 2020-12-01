@@ -1,0 +1,9 @@
+.content-donators {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 56px);
+}
+
+.section-donators {
+    flex-grow: 1;
+}
