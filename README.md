@@ -13,12 +13,12 @@ Features:
 <br />
 <br />
 <br />
-**🔗 LIVE: http://jacekcv.com/projects/hangman/**
+** 🔗 LIVE: http://jacekcv.com/projects/hangman/ **
 <br />
-**🌐 My website: http://jacekcv.com/**
+** 🌐 My website: http://jacekcv.com/ **
 <br />
 <br />
-**❗️❤️ THANKS FOR VISITING MY PROFILE ❤️❗️**
+** ❗️❤️ THANKS FOR VISITING MY PROFILE ❤️❗️ **
 <br />
 <br />
 <br />
